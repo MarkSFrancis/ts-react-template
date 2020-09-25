@@ -1,8 +1,19 @@
-/* Optimised for NodeJs 12.x */
+/* React specific config */
 {
-  "extends": "@tsconfig/node12/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist"
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "jsx": "preserve"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

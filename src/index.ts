@@ -1,3 +1,5 @@
-import { sum } from "./math";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+import "./globalStyles/index.scss";
 
-console.info(sum(1, 2));
+ReactDOM.render(App(), document.getElementById("root"));
