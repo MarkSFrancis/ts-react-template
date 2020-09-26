@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js",
+    "start": "webpack-dev-server",
+    "build": "webpack --env.NODE_ENV=production",
     "test": "jest",
     "test:w": "jest --watch",
     "test:ci": "jest --coverage"

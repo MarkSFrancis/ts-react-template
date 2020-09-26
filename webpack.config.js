@@ -6,10 +6,8 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
-// Contains config shared by both dev and production
-
-module.exports = function (webpackEnv) {
-  const isDevelopment = webpackEnv !== "production";
+module.exports = (env) => {
+  const isDevelopment = !env || env.NODE_ENV !== "production";
 
   const styleLoaders = [
     isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
