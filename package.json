@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "tsc",
+    "build": "webpack --config webpack.config.prod.js",
     "test": "jest",
     "test:w": "jest --watch",
     "test:ci": "jest --coverage"

@@ -51,7 +51,7 @@ module.exports = function (webpackEnv) {
     devtool: isDevelopment && "cheap-module-source-map",
     stats: "minimal",
     output: {
-      path: path.resolve(__dirname, "build"),
+      path: path.resolve(__dirname, "dist"),
       filename: isDevelopment ? "[name].js" : "[name].[contenthash:8].js",
       chunkFilename: isDevelopment
         ? "[name].chunk.js"
