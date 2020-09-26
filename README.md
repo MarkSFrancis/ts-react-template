@@ -1,6 +1,8 @@
 # Typescript Template for Node
 
-Template project for a Typescript app designed to run on node 12
+Template project for a SPA React Typescript app
+
+[![Actions Status](https://github.com/MarkSFrancis/ts-react-template/workflows/Build/badge.svg)](https://github.com/MarkSFrancis/ts-react-template/actions)
 
 ## Features
 
