@@ -3,11 +3,12 @@ import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+const Container = styled.div`
+  margin: 1rem;
+`;
+
 export function NotFoundPage() {
   const { pathname } = useLocation();
-  const Container = styled.div`
-    margin: 1rem;
-  `;
 
   return (
     <Container>

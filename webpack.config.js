@@ -132,7 +132,7 @@ module.exports = function (webpackEnv) {
       new CopyWebpackPlugin({
         patterns: [{ from: "./src/public", to: "./" }],
       }),
-      new Dotenv(),
+      new Dotenv({ silent: true }),
       !isDevelopment &&
         new MiniCssExtractPlugin({
           filename: "[name].[contenthash:8].css",

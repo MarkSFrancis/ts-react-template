@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-export function HomePage() {
-  const Container = styled.div`
-    margin: 1rem;
-  `;
+const Container = styled.div`
+  margin: 1rem;
+`;
 
+export function HomePage() {
   return (
     <Container>
       <h1>Hello World!</h1>
