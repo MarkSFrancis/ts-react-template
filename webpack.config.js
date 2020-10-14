@@ -128,7 +128,10 @@ module.exports = (env) => {
           filename: "[name].[contenthash:8].css",
           chunkFilename: "[id].[contenthash:8].css",
         }),
-      new ESLintPlugin(),
+      new ESLintPlugin({
+        context: "src",
+        extensions: ["js", "jsx", "ts", "tsx"],
+      }),
     ],
     devServer: {
       port: 3000,
