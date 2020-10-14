@@ -8,7 +8,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = (env) => {
-  const isDevelopment = !env || env.NODE_ENV !== "production";
+  const isDevelopment = !env || !env.prod;
 
   const styleLoaders = [
     isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
