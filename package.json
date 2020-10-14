@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --env.NODE_ENV=production",
+    "start": "webpack serve",
+    "build": "webpack --env prod",
     "test": "jest",
     "test:w": "jest --watch",
     "test:ci": "jest --coverage"
@@ -24,6 +24,7 @@
     "@types/styled-components": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.1",
+    "@webpack-cli/serve": "^1.0.1",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^5.0.0",

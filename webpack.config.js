@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = (env) => {
-  const isDevelopment = !env || env.NODE_ENV !== "production";
+  const isDevelopment = !env || !env.prod;
 
   const styleLoaders = [
     isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
