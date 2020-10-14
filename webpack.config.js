@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = (env) => {
   const isDevelopment = !env || !env.prod;
@@ -35,14 +36,6 @@ module.exports = (env) => {
     },
   };
 
-  const esLintLoader = {
-    loader: "eslint-loader",
-    options: {
-      cache: isDevelopment,
-      quiet: true,
-    },
-  };
-
   const config = {
     mode: isDevelopment ? "development" : "production",
     entry: ["./src/index.ts"],
@@ -69,13 +62,12 @@ module.exports = (env) => {
             {
               loader: "ts-loader",
             },
-            esLintLoader,
           ],
         },
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
-          use: [babelLoader, esLintLoader],
+          use: [babelLoader],
         },
         {
           test: /\.s[ac]ss$/i,
@@ -136,6 +128,10 @@ module.exports = (env) => {
           filename: "[name].[contenthash:8].css",
           chunkFilename: "[id].[contenthash:8].css",
         }),
+      new ESLintPlugin({
+        context: "src",
+        extensions: ["js", "jsx", "ts", "tsx"],
+      }),
     ],
     devServer: {
       port: 3000,
