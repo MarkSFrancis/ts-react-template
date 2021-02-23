@@ -10,7 +10,7 @@
     "test:ci": "jest --coverage"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.17",
+    "@babel/core": "^7.13.1",
     "@babel/preset-env": "^7.12.17",
     "@babel/preset-react": "^7.12.13",
     "@svgr/webpack": "^5.5.0",
