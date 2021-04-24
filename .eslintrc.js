@@ -6,6 +6,7 @@ module.exports = {
     "plugin:react/recommended",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
     "prettier",
   ],
   parserOptions: {
@@ -15,6 +16,7 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-debugger": "warn",
+    "react/react-in-jsx-scope": "off",
   },
   overrides: [
     {
