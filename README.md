@@ -1,4 +1,4 @@
-# Typescript Template for Node
+# Typescript Template for React
 
 Template project for a SPA React Typescript app
 
