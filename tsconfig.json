@@ -1,20 +1,30 @@
-/* React specific config */
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "isolatedModules": true,
     "resolveJsonModule": true,
-    "noEmit": false,
-    "jsx": "react"
+    "isolatedModules": true,
+    "jsx": "preserve"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "./setup-tests.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
