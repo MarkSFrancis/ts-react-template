@@ -17,6 +17,7 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-debugger": "warn",
     "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
   },
   overrides: [
     {

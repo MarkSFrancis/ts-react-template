@@ -11,7 +11,6 @@
 1. Linter (using [eslint](https://eslint.org/))
 1. Formatter (using [prettier](https://prettier.io/))
 1. Testing (using [@testing-library/react](https://testing-library.com/))
-1. [Storybook](https://storybook.js.org/)
 1. Auto-package install on pull (using [husky](https://typicode.github.io/husky))
 1. Auto-lint on commit (using [lint-staged](https://github.com/okonet/lint-staged))
 1. Auto-test on push (using [husky](https://typicode.github.io/husky))

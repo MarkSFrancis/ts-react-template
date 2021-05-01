@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import { Hero } from "./hero";
+import { HelloWorld } from "./HelloWorld";
 
 it("Should render hello world", () => {
-  render(<Hero />);
+  render(<HelloWorld />);
   const element = screen.queryByText("Hello world");
 
   expect(element).toBeInTheDocument();
