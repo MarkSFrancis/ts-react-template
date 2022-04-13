@@ -3,10 +3,9 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "jest"],
   extends: [
-    "plugin:react/recommended",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
+    "plugin:@next/next/recommended",
     "prettier",
   ],
   parserOptions: {
@@ -38,7 +37,7 @@ module.exports = {
   ],
   settings: {
     react: {
-      version: "latest",
+      version: "detect",
     },
   },
 };

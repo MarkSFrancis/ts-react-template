@@ -1221,7 +1221,7 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.1.5.tgz#a21ba6708022d630402ca2b340316e69a0296dfc"
   integrity sha512-+34yUJslfJi7Lyx6ELuN8nWcOzi27izfYnZIC1Dqv7kmmfiBVxgzR3BXhlvEMTKC2IRJhXVs2FkMY+buQe3k7Q==
 
-"@next/eslint-plugin-next@12.1.5":
+"@next/eslint-plugin-next@12.1.5", "@next/eslint-plugin-next@^12.1.5":
   version "12.1.5"
   resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-12.1.5.tgz#273885b35e6bbcd40ff1436d2a8d0ec03fb6f6ef"
   integrity sha512-Cnb8ERC5bNKBFrnMH6203sp/b0Y78QRx1XsFu+86oBtDBmQmOFoHu7teQjHm69ER73XKK3aGaeoLiXacHoUFsg==
@@ -1529,10 +1529,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^18.0.1":
-  version "18.0.1"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.1.tgz#1b2e02fb7613212518733946e49fb963dfc66e19"
-  integrity sha512-VnWlrVgG0dYt+NqlfMI0yUYb8Rdl4XUROyH+c6gq/iFCiZ805Vi//26UW38DHnxQkbDhnrIWTBiy6oKZqL11cw==
+"@types/react@*", "@types/react@^18.0.3":
+  version "18.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.3.tgz#baefa397561372015b9f8ba5bc83bc3f84ae8fcb"
+  integrity sha512-P8QUaMW4k+kH9aKNPl9b3XWcKMSSALYprLL8xpAMJOLUn3Pl6B+6nKC4F7dsk9oJPwkiRx+qlwhG/Zc1LxFVuQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
