@@ -1,8 +1,10 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { BlobsBackground } from "../components/BlurryBlobs";
-import { useMemo } from "react";
+"use client";
 
-function MyApp({ Component, pageProps }) {
+import { ChakraProvider } from "@chakra-ui/react";
+import { useMemo } from "react";
+import { BlobsBackground } from "../views/BlobsBackground";
+
+export function Providers({ children }: { children: React.ReactNode }) {
   const randomColors = useMemo(() => {
     const newColor = () => `hsl(${Math.random() * 255}, 80%, 85%)`;
     return [
@@ -18,11 +20,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider>
-      <BlobsBackground blobColors={randomColors}>
-        <Component {...pageProps} />
-      </BlobsBackground>
+      <BlobsBackground blobColors={randomColors}>{children}</BlobsBackground>
     </ChakraProvider>
   );
 }
-
-export default MyApp;

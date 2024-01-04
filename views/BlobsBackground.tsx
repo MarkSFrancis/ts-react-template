@@ -1,11 +1,11 @@
 import { forwardRef, Box, BoxProps, Icon, IconProps } from "@chakra-ui/react";
-import React, { FC, ReactText } from "react";
+import React, { FC } from "react";
 
 export interface BlobProps {
   fill: string;
-  cx: ReactText;
-  cy: ReactText;
-  r?: ReactText;
+  cx: string | number;
+  cy: string | number;
+  r?: string | number;
 }
 
 export const Blob: FC<BlobProps> = (props) => (
