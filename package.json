@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.0.4",
-    "@testing-library/jest-dom": "^6.3.0",
+    "@testing-library/jest-dom": "^6.4.0",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^27.5.0",
     "@types/react": "^18.2.48",
