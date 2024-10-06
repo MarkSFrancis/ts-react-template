@@ -1,35 +1,33 @@
-import { forwardRef, Box, BoxProps, Icon, IconProps } from "@chakra-ui/react";
-import React, { FC } from "react";
+import React, { ComponentProps, FC, forwardRef } from 'react';
+import { cn } from '~/lib/utils';
 
-export interface BlobProps {
+interface BlobProps {
   fill: string;
   cx: string | number;
   cy: string | number;
   r?: string | number;
 }
 
-export const Blob: FC<BlobProps> = (props) => (
-  <circle r="101.5" {...props}></circle>
-);
+const Blob: FC<BlobProps> = (props) => <circle r="101.5" {...props}></circle>;
 
-export interface BlobsSvgProps extends IconProps {
+interface BlobsSvgProps extends ComponentProps<'svg'> {
   blobColors: BlobColors;
 }
 
-export const BlobsSvg = forwardRef<BlobsSvgProps, typeof Icon>((props, ref) => {
-  const { blobColors, ...iconProps } = props;
+const BlobsSvg = forwardRef<SVGSVGElement, BlobsSvgProps>((props, ref) => {
+  const { blobColors, className, ...svgProps } = props;
 
   return (
-    <Icon
+    <svg
       height="100%"
       width="100%"
       viewBox="ignore"
       preserveAspectRatio="none"
-      zIndex={-1}
       xmlns="http://www.w3.org/2000/svg"
       filter="blur(70px)"
       ref={ref}
-      {...iconProps}
+      className={cn('-z-10', className)}
+      {...svgProps}
     >
       {/** Repeats pattern vertically up to 20 times */}
       <pattern
@@ -57,7 +55,7 @@ export const BlobsSvg = forwardRef<BlobsSvgProps, typeof Icon>((props, ref) => {
         width="10000"
         height="10000"
       ></rect>
-    </Icon>
+    </svg>
   );
 });
 
@@ -71,19 +69,19 @@ export type BlobColors = readonly [
   string,
 ];
 
-export interface BlobsBackgroundProps extends BoxProps {
+export interface BlobsBackgroundProps extends ComponentProps<'div'> {
   blobColors: BlobColors;
 }
 
-export const BlobsBackground = forwardRef<BlobsBackgroundProps, typeof Box>(
+export const BlobsBackground = forwardRef<HTMLDivElement, BlobsBackgroundProps>(
   (props, ref) => {
-    const { blobColors, ...boxProps } = props;
+    const { blobColors, ...divProps } = props;
 
     return (
-      <Box position="relative" minH="100vh">
-        <BlobsSvg position="absolute" blobColors={blobColors} />
-        <Box ref={ref} {...boxProps} />
-      </Box>
+      <div className="relative min-h-screen">
+        <BlobsSvg className="absolute" blobColors={blobColors} />
+        <div ref={ref} {...divProps} />
+      </div>
     );
   }
 );

@@ -8,11 +8,7 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
-# production
+# remix
 /build
 
 # misc
@@ -30,5 +26,7 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# vercel
-.vercel
+# cache files
+/.cache
+tsconfig.tsbuildinfo
+.eslintcache
