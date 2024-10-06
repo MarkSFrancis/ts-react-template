@@ -1,5 +1,6 @@
 import { defineWorkspace } from 'vitest/config';
 import react from '@vitejs/plugin-react';
+import { type LaunchOptions } from 'playwright';
 
 export default defineWorkspace([
   {
@@ -28,6 +29,9 @@ export default defineWorkspace([
           port: 5200,
         },
         name: 'chromium',
+        providerOptions: {
+          launch: {} satisfies LaunchOptions,
+        },
         enabled: true,
         provider: 'playwright',
         // Switch this to `false` if you want to see the tests running in the browser

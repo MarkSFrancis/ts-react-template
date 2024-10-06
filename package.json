@@ -8,7 +8,8 @@
     "dev": "remix vite:dev",
     "start": "remix-serve ./build/server/index.js",
     "test": "vitest --changed main",
-    "test:all": "vitest",
+    "test:all": "vitest run",
+    "test:setup": "npx playwright install chromium --with-deps",
     "prepare": "husky"
   },
   "dependencies": {
