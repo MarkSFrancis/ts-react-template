@@ -1,4 +1,4 @@
-import React, { ComponentProps, FC, forwardRef } from 'react';
+import { ComponentProps, FC, forwardRef } from 'react';
 import { cn } from '~/lib/utils';
 
 interface BlobProps {

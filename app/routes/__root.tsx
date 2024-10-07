@@ -2,10 +2,15 @@ import { createRootRoute } from '@tanstack/react-router';
 import { Outlet, ScrollRestoration } from '@tanstack/react-router';
 import { Body, Head, Html, Meta, Scripts } from '@tanstack/start';
 import * as React from 'react';
-
-import '../app.css';
+import appCss from '~/app.css?url';
 
 export const Route = createRootRoute({
+  links: () => [
+    {
+      rel: 'stylesheet',
+      href: appCss,
+    },
+  ],
   meta: () => [
     {
       charSet: 'utf-8',
@@ -15,7 +20,11 @@ export const Route = createRootRoute({
       content: 'width=device-width, initial-scale=1',
     },
     {
-      title: 'TanStack Start Starter',
+      title: 'New React App',
+    },
+    {
+      name: 'description',
+      content: 'Welcome to your new app!',
     },
   ],
   component: RootComponent,

@@ -8,8 +8,10 @@
 # testing
 /coverage
 
-# remix
-/build
+# vinxi
+/.vercel
+/.vinxi
+/.output
 
 # misc
 .DS_Store
