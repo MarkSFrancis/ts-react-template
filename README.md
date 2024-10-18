@@ -7,7 +7,7 @@
 1. [Typescript](https://www.typescriptlang.org/)
 1. Hot reload (using [Vite](https://vitejs.dev/))
 1. [React](https://reactjs.org/)
-1. Router (using [Remix](https://remix.run/))
+1. Router (using [Tanstack Start](https://tanstack.com/router/latest/docs/framework/react/start/overview))
 1. Styles (using [TailwindCSS](https://tailwindcss.com/))
 1. Linter (using [eslint](https://eslint.org/))
 1. Formatter (using [prettier](https://prettier.io/))
