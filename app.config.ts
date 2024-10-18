@@ -6,12 +6,10 @@ export default defineConfig({
     preset: 'node-server',
   },
   vite: {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    plugins: () => [
+    plugins: [
       viteTsConfigPaths({
         projects: ['./tsconfig.json'],
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      }) as any,
+      }),
     ],
   },
 });
