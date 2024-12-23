@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@tanstack/react-router": "^1.87.12",
-    "@tanstack/start": "^1.91.3",
+    "@tanstack/start": "^1.92.2",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
     "react": "^19.0.0",
