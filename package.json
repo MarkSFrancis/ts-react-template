@@ -13,7 +13,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@tanstack/react-router": "^1.94.1",
+    "@tanstack/react-router": "^1.95.1",
     "@tanstack/start": "^1.94.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.469.0",
