@@ -16,7 +16,7 @@
     "@tanstack/react-router": "^1.95.2",
     "@tanstack/start": "^1.95.2",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.469.0",
+    "lucide-react": "^0.471.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0",
