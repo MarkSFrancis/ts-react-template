@@ -13,6 +13,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
     "@tanstack/react-router": "^1.97.14",
     "@tanstack/start": "^1.97.15",
     "clsx": "^2.1.1",
@@ -23,11 +24,11 @@
     "vinxi": "^0.5.1"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/browser": "^3.0.3",
-    "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
     "eslint": "^9.18.0",
     "eslint-plugin-react-hooks": "^5.1.0",
@@ -38,7 +39,7 @@
     "playwright": "^1.50.0",
     "postcss": "^8.5.1",
     "prettier": "^3.4.2",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.0.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.21.0",
     "vite-tsconfig-paths": "^5.1.4",
