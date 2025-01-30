@@ -13,7 +13,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.1",
     "@tanstack/react-router": "^1.97.14",
     "@tanstack/start": "^1.98.3",
     "clsx": "^2.1.1",
