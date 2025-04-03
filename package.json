@@ -24,7 +24,7 @@
     "vinxi": "^0.5.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.0",
+    "@tailwindcss/postcss": "^4.1.1",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.1.1",
     "@vitejs/plugin-react": "^4.3.4",
