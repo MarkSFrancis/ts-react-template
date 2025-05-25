@@ -5,6 +5,6 @@ export const Route = createFileRoute('/')({
   component: Home,
 });
 
-export default function Home() {
+function Home() {
   return <HelloWorld />;
 }
