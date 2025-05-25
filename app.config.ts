@@ -1,8 +1,11 @@
 import tailwindcss from '@tailwindcss/vite';
-import { defineConfig } from '@tanstack/start/config';
+import { defineConfig } from '@tanstack/react-start/config';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
+  tsr: {
+    appDirectory: 'src',
+  },
   server: {
     preset: 'node-server',
   },

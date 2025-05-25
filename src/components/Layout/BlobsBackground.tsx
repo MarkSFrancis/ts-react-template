@@ -1,5 +1,5 @@
 import { ComponentProps, FC, forwardRef } from 'react';
-import { cn } from '~/lib/utils';
+import { cn } from 'src/lib/utils';
 
 interface BlobProps {
   fill: string;
