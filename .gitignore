@@ -8,9 +8,9 @@
 # testing
 /coverage
 
-# vinxi
-/.vercel
-/.vinxi
+# tanstack start
+/.tanstack
+/.nitro
 /.output
 
 # misc
