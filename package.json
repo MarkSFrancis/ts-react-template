@@ -27,7 +27,7 @@
     "@tailwindcss/postcss": "^4.1.11",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
+    "@vitejs/plugin-react": "^4.7.0",
     "@vitest/browser": "^3.2.4",
     "babel-loader": "^10.0.0",
     "eslint": "^9.31.0",
