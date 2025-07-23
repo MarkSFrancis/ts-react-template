@@ -44,7 +44,7 @@
     "typescript-eslint": "^8.37.0",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
-    "vitest-browser-react": "^1.0.0"
+    "vitest-browser-react": "^1.0.1"
   },
   "lint-staged": {
     "*.{js,ts}": "eslint --cache --fix",
