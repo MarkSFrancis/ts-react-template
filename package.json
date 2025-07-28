@@ -15,7 +15,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "@tanstack/react-router": "^1.130.2",
-    "@tanstack/react-start": "^1.129.8",
+    "@tanstack/react-start": "^1.130.2",
     "clsx": "^2.1.1",
     "lucide-react": "^0.526.0",
     "react": "^19.0.0",
