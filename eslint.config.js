@@ -12,7 +12,9 @@ export default ts.config(
   {
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ['*.js'],
+        },
         tsconfigRootDir: import.meta.dirname,
       },
     },
