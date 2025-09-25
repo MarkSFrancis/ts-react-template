@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "start": "node ./.output/server/index.mjs",
+    "start": "node .output/server/index.mjs",
     "test": "vitest --changed main",
     "test:all": "vitest run",
     "test:setup": "npx playwright install chromium --with-deps",

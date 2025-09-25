@@ -9,9 +9,9 @@ export default defineConfig({
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
     }),
-    tailwindcss(),
-    tanstackStart({ customViteReactPlugin: true }),
+    tanstackStart(),
     react(),
+    tailwindcss(),
   ],
   test: {
     projects: [

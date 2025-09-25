@@ -32,3 +32,6 @@ yarn-error.log*
 /.cache
 tsconfig.tsbuildinfo
 .eslintcache
+
+# build output
+/dist
