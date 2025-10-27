@@ -1,8 +1,11 @@
+/// <reference types="vitest/config" />
+
 import tailwindcss from '@tailwindcss/vite';
 import { tanstackStart } from '@tanstack/react-start/plugin/vite';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import viteTsConfigPaths from 'vite-tsconfig-paths';
+import { playwright } from '@vitest/browser-playwright';
 
 export default defineConfig({
   plugins: [
@@ -46,7 +49,7 @@ export default defineConfig({
               },
             ],
             enabled: true,
-            provider: 'playwright',
+            provider: playwright(),
             // Switch this to `false` if you want to see the tests running in the browser
             headless: true,
           },
