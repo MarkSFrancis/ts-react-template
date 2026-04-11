@@ -6,13 +6,10 @@
     "target": "ES2022",
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "types": [
-      "@vitest/browser/matchers",
-      "@vitest/browser/providers/playwright"
-    ],
-    "baseUrl": ".",
+    "types": ["@vitest/browser/matchers"],
     "paths": {
-      "~/*": ["./src/*"]
-    }
+      "#/*": ["./src/*"]
+    },
+    "noEmit": true
   }
 }

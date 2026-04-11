@@ -6,7 +6,7 @@ import {
   Outlet,
 } from '@tanstack/react-router';
 import * as React from 'react';
-import appCss from '~/app.css?url';
+import appCss from '#/app.css?url';
 
 export const Route = createRootRoute({
   head: () => ({
