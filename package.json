@@ -38,7 +38,7 @@
     "playwright": "^1.59.1",
     "prettier": "^3.8.3",
     "tailwindcss": "^4.2.2",
-    "typescript": "^6.0.2",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.58.2",
     "vitest": "^4.1.0",
     "vitest-browser-react": "^2.2.0"
