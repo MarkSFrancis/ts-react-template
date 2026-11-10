@@ -37,7 +37,7 @@
     "lint-staged": "^17.6.0",
     "playwright": "^1.65.0",
     "prettier": "^3.9.10",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "^4.3.5",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1",
     "vitest": "^5.0.5",
